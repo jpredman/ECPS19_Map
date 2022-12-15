@@ -84,20 +84,29 @@ var lyr_Police_Districts_4 = new ol.layer.Vector({
                 title: '<img src="styles/legend/Police_Districts_4.png" /> Police_Districts'
             });
 
-lyr_OpenStreetMap_0.setVisible(true);lyr_2019_Municipal_Runoff_1.setVisible(true);lyr_2019_Municipal_General_2.setVisible(true);lyr_2022_General_Election_3.setVisible(true);lyr_Police_Districts_4.setVisible(true);
+lyr_OpenStreetMap_0.setVisible(true);lyr_2019_Municipal_Runoff_1.setVisible(false);lyr_2019_Municipal_General_2.setVisible(false);lyr_2022_General_Election_3.setVisible(true);lyr_Police_Districts_4.setVisible(true);
 var layersList = [lyr_OpenStreetMap_0,lyr_2019_Municipal_Runoff_1,lyr_2019_Municipal_General_2,lyr_2022_General_Election_3,lyr_Police_Districts_4];
-var layersList = [lyr_OpenStreetMap_0,lyr_2019_Municipal_Runoff_1,lyr_2019_Municipal_General_2,lyr_2022_General_Election_3,lyr_Police_Districts_4];
-lyr_2019_Municipal_Runoff_1.set('fieldAliases', {'id': 'id', 'shape_area': 'shape_area', 'precinct': 'precinct', 'ward': 'ward', 'full_text': 'full_text', 'shape_len': 'shape_len', 'Register Voters': 'Register Voters', 'Ballots Cast': 'Ballots Cast', 'Turnout %': 'Turnout %', });
-lyr_2019_Municipal_General_2.set('fieldAliases', {'id': 'id', 'shape_area': 'shape_area', 'precinct': 'precinct', 'ward': 'ward', 'full_text': 'full_text', 'shape_len': 'shape_len', 'Register Voters': 'Register Voters', 'Ballots Cast': 'Ballots Cast', 'Turnout %': 'Turnout %', });
-lyr_2022_General_Election_3.set('fieldAliases', {'id': 'id', 'shape_area': 'shape_area', 'precinct': 'precinct', 'ward': 'ward', 'full_text': 'full_text', 'shape_len': 'shape_len', 'Register Voters': 'Register Voters', 'Ballots Cast': 'Ballots Cast', 'Turnout %': 'Turnout %', });
+//var layersList = [lyr_OpenStreetMap_0,lyr_2019_Municipal_Runoff_1,lyr_2019_Municipal_General_2,lyr_2022_General_Election_3,lyr_Police_Districts_4];
+//lyr_2019_Municipal_Runoff_1.set('fieldAliases', {'id': 'id', 'shape_area': 'shape_area', 'precinct': 'precinct', 'ward': 'ward', 'full_text': 'full_text', 'shape_len': 'shape_len', 'Register Voters': 'Register Voters', 'Ballots Cast': 'Ballots Cast', 'Turnout %': 'Turnout %', });
+lyr_2019_Municipal_Runoff_1.set('fieldAliases', {'precinct': 'precinct', 'ward': 'ward','Turnout %': 'Turnout %', });
+//lyr_2019_Municipal_General_2.set('fieldAliases', {'id': 'id', 'shape_area': 'shape_area', 'precinct': 'precinct', 'ward': 'ward', 'full_text': 'full_text', 'shape_len': 'shape_len', 'Register Voters': 'Register Voters', 'Ballots Cast': 'Ballots Cast', 'Turnout %': 'Turnout %', });
+lyr_2019_Municipal_General_2.set('fieldAliases', {'precinct': 'precinct', 'ward': 'ward','Turnout %': 'Turnout %', });
+//lyr_2022_General_Election_3.set('fieldAliases', {'id': 'id', 'shape_area': 'shape_area', 'precinct': 'precinct', 'ward': 'ward', 'full_text': 'full_text', 'shape_len': 'shape_len', 'Register Voters': 'Register Voters', 'Ballots Cast': 'Ballots Cast', 'Turnout %': 'Turnout %', });
+lyr_2022_General_Election_3.set('fieldAliases', {'precinct': 'precinct', 'ward': 'ward','Turnout %': 'Turnout %', });
 //lyr_Police_Districts_4.set('fieldAliases', {'id': 'id', 'dist_label': 'dist_label', 'dist_num': 'dist_num', });
-lyr_2019_Municipal_Runoff_1.set('fieldImages', {'id': 'Range', 'shape_area': 'TextEdit', 'precinct': 'TextEdit', 'ward': 'TextEdit', 'full_text': 'TextEdit', 'shape_len': 'TextEdit', 'Register Voters': 'TextEdit', 'Ballots Cast': 'TextEdit', 'Turnout %': 'TextEdit', });
-lyr_2019_Municipal_General_2.set('fieldImages', {'id': 'Range', 'shape_area': 'TextEdit', 'precinct': 'TextEdit', 'ward': 'TextEdit', 'full_text': 'TextEdit', 'shape_len': 'TextEdit', 'Register Voters': 'TextEdit', 'Ballots Cast': 'TextEdit', 'Turnout %': 'TextEdit', });
-lyr_2022_General_Election_3.set('fieldImages', {'id': 'Range', 'shape_area': 'TextEdit', 'precinct': 'TextEdit', 'ward': 'TextEdit', 'full_text': 'TextEdit', 'shape_len': 'TextEdit', 'Register Voters': 'TextEdit', 'Ballots Cast': 'TextEdit', 'Turnout %': 'TextEdit', });
+//lyr_2019_Municipal_Runoff_1.set('fieldImages', {'id': 'Range', 'shape_area': 'TextEdit', 'precinct': 'TextEdit', 'ward': 'TextEdit', 'full_text': 'TextEdit', 'shape_len': 'TextEdit', 'Register Voters': 'TextEdit', 'Ballots Cast': 'TextEdit', 'Turnout %': 'TextEdit', });
+lyr_2019_Municipal_Runoff_1.set('fieldImages', {'precinct': 'precinct', 'ward': 'ward','Turnout %': 'Turnout %', });
+//lyr_2019_Municipal_General_2.set('fieldImages', {'id': 'Range', 'shape_area': 'TextEdit', 'precinct': 'TextEdit', 'ward': 'TextEdit', 'full_text': 'TextEdit', 'shape_len': 'TextEdit', 'Register Voters': 'TextEdit', 'Ballots Cast': 'TextEdit', 'Turnout %': 'TextEdit', });
+lyr_2019_Municipal_General_2.set('fieldImages', {'precinct': 'precinct', 'ward': 'ward','Turnout %': 'Turnout %', });
+//lyr_2022_General_Election_3.set('fieldImages', {'id': 'Range', 'shape_area': 'TextEdit', 'precinct': 'TextEdit', 'ward': 'TextEdit', 'full_text': 'TextEdit', 'shape_len': 'TextEdit', 'Register Voters': 'TextEdit', 'Ballots Cast': 'TextEdit', 'Turnout %': 'TextEdit', });
+lyr_2022_General_Election_3.set('fieldImages', {'precinct': 'precinct', 'ward': 'ward','Turnout %': 'Turnout %', });
 //lyr_Police_Districts_4.set('fieldImages', {'id': 'TextEdit', 'dist_label': 'TextEdit', 'dist_num': 'TextEdit', });
-lyr_2019_Municipal_Runoff_1.set('fieldLabels', {'id': 'no label', 'shape_area': 'no label', 'precinct': 'header label', 'ward': 'no label', 'full_text': 'no label', 'shape_len': 'no label', 'Register Voters': 'no label', 'Ballots Cast': 'no label', 'Turnout %': 'header label', });
-lyr_2019_Municipal_General_2.set('fieldLabels', {'id': 'no label', 'shape_area': 'no label', 'precinct': 'header label', 'ward': 'no label', 'full_text': 'no label', 'shape_len': 'no label', 'Register Voters': 'no label', 'Ballots Cast': 'no label', 'Turnout %': 'inline label', });
-lyr_2022_General_Election_3.set('fieldLabels', {'id': 'no label', 'shape_area': 'no label', 'precinct': 'header label', 'ward': 'no label', 'full_text': 'no label', 'shape_len': 'no label', 'Register Voters': 'no label', 'Ballots Cast': 'no label', 'Turnout %': 'header label', });
+//lyr_2019_Municipal_Runoff_1.set('fieldLabels', {'id': 'no label', 'shape_area': 'no label', 'precinct': 'header label', 'ward': 'header label', 'full_text': 'no label', 'shape_len': 'no label', 'Register Voters': 'no label', 'Ballots Cast': 'no label', 'Turnout %': 'header label', });
+lyr_2019_Municipal_Runoff_1.set('fieldLabels', {'precinct': 'header label', 'ward': 'header label', 'Turnout %': 'header label', });
+//lyr_2019_Municipal_General_2.set('fieldLabels', {'id': 'no label', 'shape_area': 'no label', 'precinct': 'header label', 'ward': 'header label', 'full_text': 'no label', 'shape_len': 'no label', 'Register Voters': 'no label', 'Ballots Cast': 'no label', 'Turnout %': 'inline label', });
+lyr_2019_Municipal_General_2.set('fieldLabels', {'precinct': 'header label', 'ward': 'header label', 'Turnout %': 'header label', });
+//lyr_2022_General_Election_3.set('fieldLabels', {'id': 'no label', 'shape_area': 'no label', 'precinct': 'header label', 'ward': 'header label', 'full_text': 'no label', 'shape_len': 'no label', 'Register Voters': 'no label', 'Ballots Cast': 'no label', 'Turnout %': 'header label', });
+lyr_2022_General_Election_3.set('fieldLabels', {'precinct': 'header label', 'ward': 'header label', 'Turnout %': 'header label', });
 //lyr_Police_Districts_4.set('fieldLabels', {'id': 'no label', 'dist_label': 'no label', 'dist_num': 'no label', });
 lyr_Police_Districts_4.on('precompose', function(evt) 
 {

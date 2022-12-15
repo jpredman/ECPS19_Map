@@ -118,7 +118,8 @@ var onPointerMove = function(evt) {
                     currentFeatureKeys = clusterFeature.getKeys();
                     popupText += '<li><table>'
                     for (var i=0; i<currentFeatureKeys.length; i++) {
-                        if (currentFeatureKeys[i] != 'geometry') {
+                        //if (currentFeatureKeys[i] != 'geometry') {
+                        if (currentFeatureKeys[i] == 'precinct' || currentFeatureKeys[i] == 'ward' || currentFeatureKeys[i] == 'Turnout %') {
                             popupField = '';
                             if (layer.get('fieldLabels')[currentFeatureKeys[i]] == "inline label") {
                             popupField += '<th>' + layer.get('fieldAliases')[currentFeatureKeys[i]] + ':</th><td>';
@@ -144,7 +145,8 @@ var onPointerMove = function(evt) {
             if (doPopup) {
                 popupText += '<li><table>';
                 for (var i=0; i<currentFeatureKeys.length; i++) {
-                    if (currentFeatureKeys[i] != 'geometry') {
+                    //if (currentFeatureKeys[i] != 'geometry') {
+                    if (currentFeatureKeys[i] == 'precinct' || currentFeatureKeys[i] == 'ward' || currentFeatureKeys[i] == 'Turnout %') {
                         popupField = '';
                         if (layer.get('fieldLabels')[currentFeatureKeys[i]] == "inline label") {
                             popupField += '<th>' + layer.get('fieldAliases')[currentFeatureKeys[i]] + ':</th><td>';
